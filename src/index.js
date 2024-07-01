@@ -2430,7 +2430,7 @@ const initializeFormElements = () => {
   signTypedDataV4.onclick = async () => {
     const msgParams = {
       domain: {
-        chainId: chainIdInt.toString(),
+        chainId: 1,// chainIdInt.toString(),
         name: 'Ether Mail',
         verifyingContract: '0xCcCCccccCCCCcCCCCCCcCcCccCcCCCcCcccccccC',
         version: '1',
@@ -2464,10 +2464,10 @@ const initializeFormElements = () => {
           { name: 'chainId', type: 'uint256' },
           { name: 'verifyingContract', type: 'address' },
         ],
-        Group: [
-          { name: 'name', type: 'string' },
-          { name: 'members', type: 'Person[]' },
-        ],
+        // Group: [
+        //   { name: 'name', type: 'string' },
+        //   { name: 'members', type: 'Person[]' },
+        // ],
         Mail: [
           { name: 'from', type: 'Person' },
           { name: 'to', type: 'Person[]' },
